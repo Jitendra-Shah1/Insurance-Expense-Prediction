@@ -110,7 +110,7 @@ scikit-learn
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 - The column names in the input DataFrame **must exactly match** the training column names.
 - The `children_expense` category values must be exactly: `'lower expenses'`, `'high expenses'`, `'medium expenses'` (with spaces, not underscores).
