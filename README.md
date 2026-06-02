@@ -1,7 +1,7 @@
 #  Insurance Expense Prediction App
 
 A machine learning web application built with **Streamlit** that predicts medical insurance expenses based on personal health and demographic information.
-## Live Demo:https://insurance-expense-prediction.streamlit.app/
+## Live Demo:https://insurance-expense-prediction.streamlit.app
 
 ---
 
