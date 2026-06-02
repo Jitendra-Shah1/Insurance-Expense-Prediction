@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import base64
+
 
 st.title("Expenses Prediction App")
 
@@ -22,24 +22,7 @@ input_df = pd.DataFrame({
     'bmi': [bmi],
     'smoker': [smoker],
     'region': [region],
-    'children_expense': [children_expense]   })
-
-
-def get_base64(file):
-    with open(file, "rb") as f:
-        return base64.b64encode(f.read()).decode()
-
-img_base64 = get_base64("insurance_photo.png")
-
-page_bg_img = f'''
-<style>
-[data-testid="stAppViewContainer"] {{
-    background-image: url("data:image/png;base64,{img_base64}");
-    background-size: cover;
-}}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
+    'children_expense': [children_expense]})
 
 
 if st.button("Predict Expense"):
